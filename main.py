@@ -1,9 +1,7 @@
-HST = 0.13
-LABOUR = 0.75
-RENT = 1
-MATERIAL = 0.5
-diameter = float(input("What is the diameter of the pizza you want? (in) "))
-subtotal = RENT + LABOUR + (diameter * MATERIAL)
-tax = subtotal * HST
-total = subtotal + tax
-print("Your total is: $", total)
+from random import *
+computerNumber = randint(1, 6)
+userNumber = int(input("Guess a random number between 1 and 6: "))
+if userNumber == computerNumber:
+  print("You guessed right")
+else:
+  print("You guessed wrong")
